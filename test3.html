@@ -53,6 +53,27 @@
             color: black;
             font-size: 18px;
         }
+
+        /* Fifth Question */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            max-width: 400px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Sixth Q */
+
     </style>
 </head>
 <body>
@@ -80,5 +101,16 @@
         <a href="#">About</a>
         <a href="#">Contact</a>
     </nav>
+
+    <!-- Fifth Question -->
+    <div class="gallery">
+        <img src="https://images.pexels.com/photos/30669128/pexels-photo-30669128/free-photo-of-colorful-natural-river-rocks-collection.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 1">
+        <img src="https://images.pexels.com/photos/30682275/pexels-photo-30682275/free-photo-of-serene-beach-landscape-in-taiwan-s-scenic-coastline.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
+        <img src="https://images.pexels.com/photos/30682275/pexels-photo-30682275/free-photo-of-serene-beach-landscape-in-taiwan-s-scenic-coastline.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 3">
+        <img src="https://images.pexels.com/photos/30785015/pexels-photo-30785015/free-photo-of-vibrant-monk-parakeet-perched-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 4">
+    </div>
+
+    <!-- Sixth Question -->
+    <button>I am Button</button>
 </body>
 </html>
